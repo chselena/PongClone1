@@ -43,16 +43,16 @@ const int VIEWPORT_X = 0,
           VIEWPORT_WIDTH = WINDOW_WIDTH,
           VIEWPORT_HEIGHT = WINDOW_HEIGHT;
 
-const char V_SHADER_PATH[] = "/Users/selenacheung/Desktop/game prog/SDLSimple/SDLSimple/shaders/vertex_textured.glsl",
-           F_SHADER_PATH[] = "/Users/selenacheung/Desktop/game prog/SDLSimple/SDLSimple/shaders/fragment_textured.glsl";
+const char V_SHADER_PATH[] = "/Users/selenacheung/Desktop/game-prog/SDLSimple/SDLSimple/shaders/vertex_textured.glsl",
+           F_SHADER_PATH[] = "/Users/selenacheung/Desktop/game-prog/SDLSimple/SDLSimple/shaders/fragment_textured.glsl";
 
 const int NUMBER_OF_TEXTURES = 1; // to be generated, that is
 const GLint LEVEL_OF_DETAIL = 0;  // base image level; Level n is the nth mipmap reduction image
 const GLint TEXTURE_BORDER = 0;   // this value MUST be zero
 
-const char PLAYER_SPRITE_FILEPATH[] = "/Users/selenacheung/Desktop/game prog/SDLSimple/SDLSimple/assets/student.png";
-const char PLAYER2_SPRITE_FILEPATH[] = "/Users/selenacheung/Desktop/game prog/SDLSimple/SDLSimple/assets/teacher.png";
-const char HW_SPRITE_FILEPATH[] = "/Users/selenacheung/Desktop/game prog/SDLSimple/SDLSimple/assets/hw.png";
+const char PLAYER_SPRITE_FILEPATH[] = "/Users/selenacheung/Desktop/game-prog/SDLSimple/SDLSimple/assets/student.png";
+const char PLAYER2_SPRITE_FILEPATH[] = "/Users/selenacheung/Desktop/game-prog/SDLSimple/SDLSimple/assets/teacher.png";
+const char HW_SPRITE_FILEPATH[] = "/Users/selenacheung/Desktop/game-prog/SDLSimple/SDLSimple/assets/hw.png";
 
 
 // –––––––––––––––––––––– MOVING –––––––––––––––––––––––––– //
@@ -65,6 +65,7 @@ float g_hw_speed = 5.0f;
 float g_previous_ticks = 0.0f;
 const float MINIMUM_COLLISION_DISTANCE = 0.5f;
 bool collide_counter = false;
+const float MILLISECONDS_IN_SECOND = 1000.0;
 // ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– //
 
 int g_frame_counter = 0;
